@@ -26,16 +26,16 @@ public class ModConditions {
 @SubscribeEvent
     public void registerSerializers(RegisterEvent event) {
         event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-                helper -> CraftingHelper.register((IConditionSerializer<?>) CHRISTMAS_ENABLED_CONDITION));
-    event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-            helper -> CraftingHelper.register((IConditionSerializer<?>) ST_PATRICKS_DAY_ENABLED_CONDITION));
+                helper -> CraftingHelper.register( CHRISTMAS_ENABLED_CONDITION));
 
     event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-            helper -> CraftingHelper.register((IConditionSerializer<?>) EASTER_ENABLED_CONDITION));
+            helper -> CraftingHelper.register( ST_PATRICKS_DAY_ENABLED_CONDITION));
 
     event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-            helper -> CraftingHelper.register((IConditionSerializer<?>) HALLOWEEN_ENABLED_CONDITION));
+            helper -> CraftingHelper.register( EASTER_ENABLED_CONDITION));
 
+    event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
+            helper -> CraftingHelper.register( HALLOWEEN_ENABLED_CONDITION));
 
-}
+    }
 }
