@@ -1,7 +1,8 @@
-package com.maideniles.maidensmerrymaking.util;
+package com.maideniles.maidensmerrymaking.conditions;
 
 import com.google.gson.JsonObject;
 import com.maideniles.maidensmerrymaking.MaidensMerryMaking;
+import com.maideniles.maidensmerrymaking.config.MerryMakingConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
@@ -21,7 +22,7 @@ public class StPatricksDayEnabledCondition implements ICondition {
 
 
     public static class Serializer implements IConditionSerializer<StPatricksDayEnabledCondition> {
-        public static final Serializer INSTANCE = new Serializer();
+
 
         @Override
         public void write(JsonObject json, StPatricksDayEnabledCondition value) { }

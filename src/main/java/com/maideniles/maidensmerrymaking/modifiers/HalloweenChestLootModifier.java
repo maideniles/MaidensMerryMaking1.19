@@ -2,7 +2,7 @@ package com.maideniles.maidensmerrymaking.modifiers;
 
 
 import com.google.common.base.Suppliers;
-import com.maideniles.maidensmerrymaking.util.MerryMakingConfig;
+import com.maideniles.maidensmerrymaking.config.MerryMakingConfig;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;

@@ -1,4 +1,4 @@
-package com.maideniles.maidensmerrymaking.util;
+package com.maideniles.maidensmerrymaking.config;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;

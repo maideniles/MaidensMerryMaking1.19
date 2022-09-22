@@ -1,13 +1,9 @@
 package com.maideniles.maidensmerrymaking;
 
 import com.maideniles.maidensmerrymaking.client.RenderLayers;
-import com.maideniles.maidensmerrymaking.entity.render.*;
-import com.maideniles.maidensmerrymaking.entity.render.bunny.*;
-import com.maideniles.maidensmerrymaking.entity.render.halloween.*;
 import com.maideniles.maidensmerrymaking.event.HalloweenEntityEvents;
 import com.maideniles.maidensmerrymaking.init.*;
-import com.maideniles.maidensmerrymaking.util.MerryMakingConfig;
-import net.minecraft.client.renderer.entity.EntityRenderers;
+import com.maideniles.maidensmerrymaking.config.MerryMakingConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -77,41 +73,7 @@ public class MaidensMerryMaking {
             HalloweenEntityEvents.initializeMobs();
             }
 
-            EntityRenderers.register(ModEntityTypes.COLORED_CHICKEN.get(), ColoredChickenRenderer::new);
 
-            EntityRenderers.register(ModEntityTypes.PINK_BUNNY.get(), PinkBunnyRenderer::new);
-            EntityRenderers.register(ModEntityTypes.PINK_BUNNY_SMALL.get(), PinkBunnyRendererSmall::new);
-            EntityRenderers.register(ModEntityTypes.PINK_BUNNY_LARGE.get(), PinkBunnyRendererLarge::new);
-
-            EntityRenderers.register(ModEntityTypes.BLUE_BUNNY.get(), BlueBunnyRenderer::new);
-            EntityRenderers.register(ModEntityTypes.BLUE_BUNNY_SMALL.get(), BlueBunnyRendererSmall::new);
-            EntityRenderers.register(ModEntityTypes.BLUE_BUNNY_LARGE.get(), BlueBunnyRendererLarge::new);
-
-            EntityRenderers.register(ModEntityTypes.CYAN_BUNNY.get(), CyanBunnyRenderer::new);
-            EntityRenderers.register(ModEntityTypes.CYAN_BUNNY_SMALL.get(), CyanBunnyRendererSmall::new);
-            EntityRenderers.register(ModEntityTypes.CYAN_BUNNY_LARGE.get(), CyanBunnyRendererLarge::new);
-
-            EntityRenderers.register(ModEntityTypes.PURPLE_BUNNY.get(), PurpleBunnyRenderer::new);
-            EntityRenderers.register(ModEntityTypes.PURPLE_BUNNY_SMALL.get(), PurpleBunnyRendererSmall::new);
-            EntityRenderers.register(ModEntityTypes.PURPLE_BUNNY_LARGE.get(), PurpleBunnyRendererLarge::new);
-
-            EntityRenderers.register(ModEntityTypes.YELLOW_BUNNY.get(), YellowBunnyRenderer::new);
-            EntityRenderers.register(ModEntityTypes.YELLOW_BUNNY_SMALL.get(), YellowBunnyRendererSmall::new);
-            EntityRenderers.register(ModEntityTypes.YELLOW_BUNNY_LARGE.get(), YellowBunnyRendererLarge::new);
-//HALLOWEEN//
-            EntityRenderers.register(ModEntityTypes.COSTUMED_ZOMBIE.get(), ZombieCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_SKELETON.get(), SkeletonCostumeRenderer::new);
-        //    EntityRenderers.register(ModEntityTypes.COSTUMED_WITHER_SKELETON.get(), WitherSkeletonCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_HUSK.get(), HuskCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_DROWNED.get(), DrownedCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_DROWNED_MERMAID.get(), DrownedMermaidCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_ZOMBIE_VILLAGER.get(), ZombieVillagerCostumeRenderer::new);
-      //      EntityRenderers.register(ModEntityTypes.COSTUMED_PILLAGER.get(), PillagerCostumeRenderer::new);
-      //      EntityRenderers.register(ModEntityTypes.COSTUMED_VINDICATOR.get(), VindicatorCostumeRenderer::new);
-      //      EntityRenderers.register(ModEntityTypes.COSTUMED_EVOKER.get(), EvokerCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_WITCH.get(), WitchCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_CREEPER.get(), CreeperCostumeRenderer::new);
-            EntityRenderers.register(ModEntityTypes.COSTUMED_SPIDER.get(), SpiderCostumeRenderer::new);
         });
 
         // some preinit code

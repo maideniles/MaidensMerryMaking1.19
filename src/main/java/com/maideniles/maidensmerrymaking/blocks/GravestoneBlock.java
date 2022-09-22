@@ -6,7 +6,7 @@ import com.maideniles.maidensmerrymaking.entity.halloween.HuskCostumeEntity;
 import com.maideniles.maidensmerrymaking.entity.halloween.SkeletonCostumeEntity;
 import com.maideniles.maidensmerrymaking.entity.halloween.ZombieCostumeEntity;
 import com.maideniles.maidensmerrymaking.init.ModEntityTypes;
-import com.maideniles.maidensmerrymaking.util.MerryMakingConfig;
+import com.maideniles.maidensmerrymaking.config.MerryMakingConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
