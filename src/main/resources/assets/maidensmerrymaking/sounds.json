@@ -1,0 +1,29 @@
+{
+ 
+  "christmas_disc": {
+    "sounds": [
+      {
+        "name": "maidensmerrymaking:christmas_disc",
+        "stream": true
+      }
+    ]
+  },
+  
+   "christmas_disc_2": {
+    "sounds": [
+      {
+        "name": "maidensmerrymaking:christmas_disc_2",
+        "stream": true
+      }
+    ]
+  },
+  
+   "halloween_disc": {
+    "sounds": [
+      {
+        "name": "maidensmerrymaking:halloween_disc",
+        "stream": true
+      }
+    ]
+  }
+}

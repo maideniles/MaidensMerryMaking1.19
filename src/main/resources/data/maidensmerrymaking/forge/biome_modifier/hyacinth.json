@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["minecraft:plains", 
+			
+			 "minecraft:river"
+  
+  ],
+  "features": "maidensmerrymaking:hyacinth_placement",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:desert",
+  "features":	[ "maidensmerrymaking:tiny_spruce_placement",
+				  "maidensmerrymaking:holly_placement"
+	  ],
+  "step": "vegetal_decoration"
+}

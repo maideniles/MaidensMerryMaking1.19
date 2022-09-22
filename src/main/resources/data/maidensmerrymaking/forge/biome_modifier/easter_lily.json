@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["minecraft:jungle", 
+			 "minecraft:savanna"
+  
+  ],
+  "features": "maidensmerrymaking:easter_lily_placement",
+  "step": "vegetal_decoration"
+}
