@@ -1,22 +1,31 @@
 package com.maideniles.maidensmerrymaking;
 
 import com.maideniles.maidensmerrymaking.client.RenderLayers;
+import com.maideniles.maidensmerrymaking.conditions.ChristmasEnabledCondition;
+import com.maideniles.maidensmerrymaking.conditions.EasterEnabledCondition;
+import com.maideniles.maidensmerrymaking.conditions.HalloweenEnabledCondition;
+import com.maideniles.maidensmerrymaking.conditions.StPatricksDayEnabledCondition;
 import com.maideniles.maidensmerrymaking.event.HalloweenEntityEvents;
 import com.maideniles.maidensmerrymaking.init.*;
 import com.maideniles.maidensmerrymaking.config.MerryMakingConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Locale;
+import java.util.Objects;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MaidensMerryMaking.MOD_ID)
@@ -32,12 +41,8 @@ public class MaidensMerryMaking {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MerryMakingConfig.CLIENT_CONFIG);
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, MerryMakingConfig.SERVER_CONFIG);
-
-
-
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
@@ -48,8 +53,6 @@ public class MaidensMerryMaking {
         ModSoundEvents.register(eventBus);
         ModAdvancements.init();
     //    ModStructures.register(eventBus);
-
-
 
     //HALLOWEEN COSTUMED MOBS
         eventBus.addListener(HalloweenEntityEvents::registerEntityAttributes);
@@ -81,6 +84,18 @@ public class MaidensMerryMaking {
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getName());
 
 
+    }
+
+    @SubscribeEvent
+    public static void registerConditionSerializers(RegisterEvent event) {
+        if(Objects.equals(event.getForgeRegistry(), ForgeRegistries.RECIPE_SERIALIZERS)) {
+
+            CraftingHelper.register(new ChristmasEnabledCondition.Serializer());
+            CraftingHelper.register(new StPatricksDayEnabledCondition.Serializer());
+            CraftingHelper.register(new EasterEnabledCondition.Serializer());
+            CraftingHelper.register(new HalloweenEnabledCondition.Serializer());
+
+        }
     }
 
     public static ResourceLocation prefix(String name) {

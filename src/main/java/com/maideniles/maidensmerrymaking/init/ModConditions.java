@@ -12,21 +12,24 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 
-@Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+import java.util.Objects;
+
+//@Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModConditions {
 
 
-
+/*
     public static final ChristmasEnabledCondition.Serializer CHRISTMAS_ENABLED_CONDITION = new ChristmasEnabledCondition.Serializer();
     public static final StPatricksDayEnabledCondition.Serializer ST_PATRICKS_DAY_ENABLED_CONDITION = new StPatricksDayEnabledCondition.Serializer();
     public static final EasterEnabledCondition.Serializer EASTER_ENABLED_CONDITION = new EasterEnabledCondition.Serializer();
     public static final HalloweenEnabledCondition.Serializer HALLOWEEN_ENABLED_CONDITION = new HalloweenEnabledCondition.Serializer();
+*/
 
 
-@SubscribeEvent
+/*
     public void registerSerializers(RegisterEvent event) {
         event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-                helper -> CraftingHelper.register( CHRISTMAS_ENABLED_CONDITION));
+                helper -> CraftingHelper.register( new ChristmasEnabledCondition.Serializer()));
 
     event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
             helper -> CraftingHelper.register( ST_PATRICKS_DAY_ENABLED_CONDITION));
@@ -38,4 +41,6 @@ public class ModConditions {
             helper -> CraftingHelper.register( HALLOWEEN_ENABLED_CONDITION));
 
     }
+*/
+
 }
