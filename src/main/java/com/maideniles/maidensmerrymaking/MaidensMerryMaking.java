@@ -62,13 +62,15 @@ public class MaidensMerryMaking {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+       ;
     }
 
     // add a comment
     public void setup(final FMLCommonSetupEvent event) {
 
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
-     //   forgeBus.addListener(HalloweenEntityEvents::setupStructureSpawns);
+
+        forgeBus.addListener(ModConditions::registerConditionSerializers);
 
         event.enqueueWork(() -> {
             //HALLOWEEN COSTUMED MOBS
@@ -86,17 +88,7 @@ public class MaidensMerryMaking {
 
     }
 
-    @SubscribeEvent
-    public static void registerConditionSerializers(RegisterEvent event) {
-        if(Objects.equals(event.getForgeRegistry(), ForgeRegistries.RECIPE_SERIALIZERS)) {
 
-            CraftingHelper.register(new ChristmasEnabledCondition.Serializer());
-            CraftingHelper.register(new StPatricksDayEnabledCondition.Serializer());
-            CraftingHelper.register(new EasterEnabledCondition.Serializer());
-            CraftingHelper.register(new HalloweenEnabledCondition.Serializer());
-
-        }
-    }
 
     public static ResourceLocation prefix(String name) {
         return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));

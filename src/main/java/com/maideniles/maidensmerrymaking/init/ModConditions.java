@@ -5,6 +5,7 @@ import com.maideniles.maidensmerrymaking.conditions.ChristmasEnabledCondition;
 import com.maideniles.maidensmerrymaking.conditions.EasterEnabledCondition;
 import com.maideniles.maidensmerrymaking.conditions.HalloweenEnabledCondition;
 import com.maideniles.maidensmerrymaking.conditions.StPatricksDayEnabledCondition;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,33 +15,21 @@ import net.minecraftforge.registries.RegisterEvent;
 
 import java.util.Objects;
 
-//@Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+//@Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID)
 public class ModConditions {
 
 
-/*
-    public static final ChristmasEnabledCondition.Serializer CHRISTMAS_ENABLED_CONDITION = new ChristmasEnabledCondition.Serializer();
-    public static final StPatricksDayEnabledCondition.Serializer ST_PATRICKS_DAY_ENABLED_CONDITION = new StPatricksDayEnabledCondition.Serializer();
-    public static final EasterEnabledCondition.Serializer EASTER_ENABLED_CONDITION = new EasterEnabledCondition.Serializer();
-    public static final HalloweenEnabledCondition.Serializer HALLOWEEN_ENABLED_CONDITION = new HalloweenEnabledCondition.Serializer();
-*/
 
+    @SubscribeEvent
+    public static void registerConditionSerializers(RegisterEvent event) {
+        if(Objects.equals(event.getForgeRegistry(), ForgeRegistries.RECIPE_SERIALIZERS)) {
 
-/*
-    public void registerSerializers(RegisterEvent event) {
-        event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-                helper -> CraftingHelper.register( new ChristmasEnabledCondition.Serializer()));
+            CraftingHelper.register(new ChristmasEnabledCondition.Serializer());
+            CraftingHelper.register(new StPatricksDayEnabledCondition.Serializer());
+            CraftingHelper.register(new EasterEnabledCondition.Serializer());
+            CraftingHelper.register(new HalloweenEnabledCondition.Serializer());
 
-    event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-            helper -> CraftingHelper.register( ST_PATRICKS_DAY_ENABLED_CONDITION));
-
-    event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-            helper -> CraftingHelper.register( EASTER_ENABLED_CONDITION));
-
-    event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS,
-            helper -> CraftingHelper.register( HALLOWEEN_ENABLED_CONDITION));
-
+        }
     }
-*/
 
 }
