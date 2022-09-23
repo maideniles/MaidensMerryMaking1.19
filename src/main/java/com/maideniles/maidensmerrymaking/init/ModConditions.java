@@ -15,7 +15,7 @@ import net.minecraftforge.registries.RegisterEvent;
 
 import java.util.Objects;
 
-//@Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID)
+@Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID)
 public class ModConditions {
 
 
