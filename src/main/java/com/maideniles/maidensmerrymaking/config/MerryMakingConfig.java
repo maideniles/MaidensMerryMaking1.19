@@ -9,6 +9,8 @@ import java.io.File;
 public class MerryMakingConfig {
     public static ForgeConfigSpec SERVER_CONFIG;
     public static ForgeConfigSpec CLIENT_CONFIG;
+
+    public static ForgeConfigSpec.IntValue INGREDIENTS_IN_CHESTS_SPAWN;
     public static ForgeConfigSpec.IntValue CHRISTMAS_PRESENT_CHEST_SPAWN;
     public static ForgeConfigSpec.BooleanValue CHRISTMAS_ENABLED;
     public static ForgeConfigSpec.BooleanValue HOLLY_ENABLED;
@@ -41,6 +43,9 @@ public class MerryMakingConfig {
 
     private static void makeConfigs(ForgeConfigSpec.Builder SERVER_BUILDER, ForgeConfigSpec.Builder CLIENT_BUILDER) {
         {
+            INGREDIENTS_IN_CHESTS_SPAWN = SERVER_BUILDER.comment("mod recipe ingredients can spawn in chests. Set to 0 to disable")
+                    .defineInRange("ingredients_in_chests_spawn", 1, 0, Integer.MAX_VALUE);
+
     //BEGIN CHRISTMAS/WINTER CONTENT//
             CHRISTMAS_PRESENT_CHEST_SPAWN = SERVER_BUILDER.comment("Christmas presents can spawn in chests. Set to 0 to disable")
                     .defineInRange("christmas_present_chest_spawn", 1, 0, Integer.MAX_VALUE);

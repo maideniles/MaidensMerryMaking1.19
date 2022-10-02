@@ -20,6 +20,7 @@ import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 public class ModEventBusEvents {
 
     @SubscribeEvent
+
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
 
         //pink bun//

@@ -18,6 +18,7 @@
 	"maidensmerrymaking:spruce_wreath_fence_gate",
 	"maidensmerrymaking:warped_wreath_fence_gate",
 	"maidensmerrymaking:crimson_wreath_fence_gate",
+	"maidensmerrymaking:mangrove_wreath_fence_gate",
 	
 	"maidensmerrymaking:acacia_picket_fence_gate",
 	"maidensmerrymaking:birch_picket_fence_gate",
@@ -27,6 +28,7 @@
 	"maidensmerrymaking:spruce_picket_fence_gate",
 	"maidensmerrymaking:warped_picket_fence_gate",
 	"maidensmerrymaking:crimson_picket_fence_gate",
+	"maidensmerrymaking:mangrove_picket_fence_gate",
 		
 	"maidensmerrymaking:acacia_wreath_lights_fence_gate",
 	"maidensmerrymaking:birch_wreath_lights_fence_gate",
@@ -36,6 +38,7 @@
 	"maidensmerrymaking:spruce_wreath_lights_fence_gate",
 	"maidensmerrymaking:warped_wreath_lights_fence_gate",
 	"maidensmerrymaking:crimson_wreath_lights_fence_gate",
+	"maidensmerrymaking:mangrove_wreath_lights_fence_gate",
 	
 	"maidensmerrymaking:acacia_wreath_multi_fence_gate",
 	"maidensmerrymaking:birch_wreath_multi_fence_gate",
@@ -44,6 +47,7 @@
 	"maidensmerrymaking:oak_wreath_multi_fence_gate",
 	"maidensmerrymaking:spruce_wreath_multi_fence_gate",
 	"maidensmerrymaking:warped_wreath_multi_fence_gate",
-	"maidensmerrymaking:crimson_wreath_multi_fence_gate"
+	"maidensmerrymaking:crimson_wreath_multi_fence_gate",
+	"maidensmerrymaking:mangrove_wreath_multi_fence_gate"
   ]
 }

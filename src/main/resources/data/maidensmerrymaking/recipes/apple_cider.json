@@ -1,13 +1,5 @@
+
 {
-  "type": "forge:conditional",
-  "recipes": [
-    {
-      "conditions": [
-        {
-          "type": "maidensmerrymaking:halloween_enabled"
-        }
-      ],
-      "recipe": {
         "type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		
@@ -29,7 +21,4 @@
         "result": {
           "item": "maidensmerrymaking:apple_cider"
         }
-      }
-    }
-  ]
 }

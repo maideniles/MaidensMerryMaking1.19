@@ -40,7 +40,7 @@ public class ChestLootModifier extends LootModifier {
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if (context.getRandom().nextFloat() > 0.15) {
-            generatedLoot.add(new ItemStack(addition, MerryMakingConfig.CHRISTMAS_PRESENT_CHEST_SPAWN.get()));
+            generatedLoot.add(new ItemStack(addition, MerryMakingConfig.INGREDIENTS_IN_CHESTS_SPAWN.get()));
         }
         return generatedLoot;
     }

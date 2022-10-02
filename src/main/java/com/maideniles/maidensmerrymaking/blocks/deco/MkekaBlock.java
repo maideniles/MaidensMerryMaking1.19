@@ -51,7 +51,7 @@ public class MkekaBlock extends HorizontalDecoBlock{
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult pHit) {
-     //   Random random = level.getRandom();
+
 
 
         ItemStack stack = player.getItemInHand(hand);

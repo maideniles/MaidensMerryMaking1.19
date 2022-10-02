@@ -228,6 +228,8 @@
 "block.maidensmerrymaking.gravestone_cross": "Cross Gravestone",
 "block.maidensmerrymaking.gravestone_obelisk": "Obelisk Gravestone",
 "block.maidensmerrymaking.gravestone_topped": "Fancy Gravestone",
+"block.maidensmerrymaking.mantel_deco_boo": "'Boo' Frame Mantel Decoration",
+"block.maidensmerrymaking.mantel_deco_haunted_house": "Haunted House Mantel Decoration",
 
 
 "block.maidensmerrymaking.blue_multi_dots_easter_egg_block": "Blue with Multi Dots Easter Egg",
@@ -398,12 +400,16 @@
 	"block.maidensmerrymaking.warped_wreath_multi_fence_gate": "Warped Fence Gate with Multi Lit Garland",
 	"block.maidensmerrymaking.crimson_wreath_multi_fence_gate": "Crimson Fence Gate with Multi Lit Garland",
 	
-	"block.maidensmerrymaking.warped_wreath_a": "Warped Door with Wreath",
+	"block.maidensmerrymaking.warped_wreath_door": "Warped Door with Wreath",
 	"block.maidensmerrymaking.warped_wreath_lights_white_door": "Warped Door with Lit Wreath",
 	"block.maidensmerrymaking.warped_wreath_lights_multi_door": "Warped Door with Multi Lit Wreath",
 	"block.maidensmerrymaking.crimson_wreath_door": "Crimson Door with Wreath",
 	"block.maidensmerrymaking.crimson_wreath_lights_white_door": "Crimson Door with Lit Wreath",
 	"block.maidensmerrymaking.crimson_wreath_lights_multi_door": "Crimson Door with Multi Lit Wreath",
+	
+	"block.maidensmerrymaking.mangrove_wreath_door": "Mangrove Door with Wreath",
+	"block.maidensmerrymaking.mangrove_wreath_lights_white_door": "Mangrove Door with Lit Wreath",
+	"block.maidensmerrymaking.mangrove_wreath_lights_multi_door": "Mangrove Door with Multi Lit Wreath",
 	
 	"block.maidensmerrymaking.iron_wreath_door": "Iron Door with Wreath",
 	"block.maidensmerrymaking.iron_wreath_lights_white_door": "Iron Door with Lit Wreath",
@@ -412,11 +418,16 @@
 	"block.maidensmerrymaking.mantel_normal_warped": "Warped Fireplace Mantel",
 	"block.maidensmerrymaking.mantel_normal_crimson": "Crimson Fireplace Mantel",
 	
+	"block.maidensmerrymaking.mantel_normal_mangrove": "Mangrove Fireplace Mantel",
+	
 	"block.maidensmerrymaking.roof_warped_stairs": "Warped Roof Stairs",
 	"block.maidensmerrymaking.roof_crimson_stairs": "Crimson Roof Stairs",
 	
+	"block.maidensmerrymaking.roof_mangrove_stairs": "Mangrove Roof Stairs",
+	
 	"block.maidensmerrymaking.snowy_warped_stairs": "Warped Snowy Stairs",
 	"block.maidensmerrymaking.snowy_crimson_stairs": "Crimson Snowy Stairs",
+	"block.maidensmerrymaking.snowy_mangrove_stairs": "Mangrove Snowy Stairs",
 	
 	"block.maidensmerrymaking.blackstone_garland_wall": "BlackStone Wall with Garland",
 	"block.maidensmerrymaking.blackstone_garland_lights_wall": "BlackStone Wall with Lit Garland",
@@ -555,6 +566,7 @@
 "block.maidensmerrymaking.jungle_roof_slab": "Jungle Roofed Slab",
 "block.maidensmerrymaking.oak_roof_slab": "Oak Roofed Slab",
 "block.maidensmerrymaking.spruce_roof_slab": "Spruce Roofed Slab",
+"block.maidensmerrymaking.mangrove_roof_slab": "Mangrove Roofed Slab",
 "block.maidensmerrymaking.polished_blackstone_brick_roof_slab": "Polished Blackstone Brick Roofed Slab",
 "block.maidensmerrymaking.deepslate_brick_roof_slab": "Deepslate Brick Roofed Slab",
 "block.maidensmerrymaking.stone_brick_roof_slab": "Stone Brick Roofed Slab",
@@ -568,6 +580,7 @@
 "block.maidensmerrymaking.crimson_snowy_slab": "Crimson Snowy Slab",
 "block.maidensmerrymaking.warped_snowy_slab": "Warped Snowy Slab",
 "block.maidensmerrymaking.crimson_roof_slab": "Crimson Roofed Slab",
+"block.maidensmerrymaking.mangrove_snowy_slab": "Mangrove Snowy Slab",
 "block.maidensmerrymaking.warped_roof_slab": "Warped Roofed Slab",
 
 
@@ -581,6 +594,7 @@
 "block.maidensmerrymaking.jungle_picket_fence": "Jungle Picket Fence",
 "block.maidensmerrymaking.spruce_picket_fence": "Spruce Picket Fence",
 "block.maidensmerrymaking.oak_picket_fence": "Oak Picket Fence",
+"block.maidensmerrymaking.mangrove_picket_fence": "Mangrove Picket Fence",
 
 "block.maidensmerrymaking.acacia_wreath_fence": "Acacia Fence with Garland",
 "block.maidensmerrymaking.birch_wreath_fence": "Birch Fence with Garland",
@@ -588,6 +602,7 @@
 "block.maidensmerrymaking.jungle_wreath_fence": "Jungle Fence with Garland",
 "block.maidensmerrymaking.oak_wreath_fence": "Oak Fence with Garland",
 "block.maidensmerrymaking.spruce_wreath_fence": "Spruce Fence with Garland",
+"block.maidensmerrymaking.mangrove_wreath_fence": "Mangrove Fence with Garland",
 
 
 "block.maidensmerrymaking.acacia_wreath_lights_fence": "Acacia Fence with Lit Garland",
@@ -596,6 +611,7 @@
 "block.maidensmerrymaking.jungle_wreath_lights_fence": "Jungle Fence with Lit Garland",
 "block.maidensmerrymaking.oak_wreath_lights_fence": "Oak Fence with Lit Garland",
 "block.maidensmerrymaking.spruce_wreath_lights_fence": "Spruce Fence with Lit Garland",
+"block.maidensmerrymaking.mangrove_wreath_lights_fence": "Mangrove Fence with Lit Garland",
 
 "block.maidensmerrymaking.acacia_picket_fence_gate": "Acacia Picket Fence Gate",
 "block.maidensmerrymaking.birch_picket_fence_gate": "Birch Picket Fence Gate",
@@ -603,6 +619,7 @@
 "block.maidensmerrymaking.jungle_picket_fence_gate": "Jungle Picket Fence Gate",
 "block.maidensmerrymaking.spruce_picket_fence_gate": "Spruce Picket Fence Gate",
 "block.maidensmerrymaking.oak_picket_fence_gate": "Oak Picket Fence Gate",
+"block.maidensmerrymaking.mangrove_picket_fence_gate": "Mangrove Picket Fence Gate",
 
 "block.maidensmerrymaking.acacia_wreath_multi_fence": "Acacia Fence with Multi Lit Garland",
 "block.maidensmerrymaking.birch_wreath_multi_fence": "Birch Fence with Multi Lit Garland",
@@ -610,6 +627,7 @@
 "block.maidensmerrymaking.jungle_wreath_multi_fence": "Jungle Fence with Multi Lit Garland",
 "block.maidensmerrymaking.oak_wreath_multi_fence": "Oak Fence with Multi Lit Garland",
 "block.maidensmerrymaking.spruce_wreath_multi_fence": "Spruce Fence with Multi Lit Garland",
+"block.maidensmerrymaking.mangrove_wreath_multi_fence": "Mangrove Fence with Multi Lit Garland",
 
 "block.maidensmerrymaking.acacia_wreath_fence_gate": "Acacia Fence Gate with Wreath",
 "block.maidensmerrymaking.birch_wreath_fence_gate": "Birch Fence Gate with Wreath",
@@ -618,12 +636,15 @@
 "block.maidensmerrymaking.oak_wreath_fence_gate": "Oak Fence with Gate Wreath",
 "block.maidensmerrymaking.spruce_wreath_fence_gate": "Spruce Fence Gate with Wreath",
 
+"block.maidensmerrymaking.mangrove_wreath_fence_gate": "Mangrove Fence Gate with Wreath",
+
 "block.maidensmerrymaking.acacia_wreath_lights_fence_gate": "Acacia Fence Gate with Lit Wreath",
 "block.maidensmerrymaking.birch_wreath_lights_fence_gate": "Birch Fence Gate with Lit Wreath",
 "block.maidensmerrymaking.dark_oak_wreath_lights_fence_gate": "Dark Oak Fence Gate with Lit Wreath",
 "block.maidensmerrymaking.jungle_wreath_lights_fence_gate": "Jungle Fence Gate with Lit Wreath",
 "block.maidensmerrymaking.oak_wreath_lights_fence_gate": "Oak Fence with Gate Lit Wreath",
 "block.maidensmerrymaking.spruce_wreath_lights_fence_gate": "Spruce Fence Gate with Lit Wreath",
+"block.maidensmerrymaking.mangrove_wreath_lights_fence_gate": "Mangrove Fence Gate with Lit Wreath",
 
 "block.maidensmerrymaking.acacia_wreath_multi_fence_gate": "Acacia Fence Gate with Multi Lit Wreath",
 "block.maidensmerrymaking.birch_wreath_multi_fence_gate": "Birch Fence Gate with Multi Lit Wreath",
@@ -631,6 +652,7 @@
 "block.maidensmerrymaking.jungle_wreath_multi_fence_gate": "Jungle Fence Gate with Multi Lit Wreath",
 "block.maidensmerrymaking.oak_wreath_multi_fence_gate": "Oak Fence with Gate Multi Lit Wreath",
 "block.maidensmerrymaking.spruce_wreath_multi_fence_gate": "Spruce Fence Gate with Multi Lit Wreath",
+"block.maidensmerrymaking.mangrove_wreath_multi_fence_gate": "Mangrove Fence Gate with Multi Lit Wreath",
 
 "block.maidensmerrymaking.cobblestone_garland_wall": "Cobblestone Wall with Garland",
 "block.maidensmerrymaking.brick_garland_wall": "Brick Wall with Garland",

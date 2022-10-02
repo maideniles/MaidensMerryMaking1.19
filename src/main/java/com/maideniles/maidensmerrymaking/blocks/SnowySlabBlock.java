@@ -32,6 +32,12 @@ public class SnowySlabBlock extends SlabBlock {
                 snow.shrink(1);
             }
 
+            if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.MANGROVE_ROOF_SLAB.get() ) {
+                System.out.println("GO GO SNOWY STAIRS!!");
+                level.setBlock(pos, ModBlocks.MANGROVE_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
+                snow.shrink(1);
+            }
+
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.BIRCH_ROOF_SLAB.get() ) {
                 System.out.println("GO GO SNOWY STAIRS!!");
                 level.setBlock(pos, ModBlocks.BIRCH_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);

@@ -32,6 +32,12 @@ public class SnowyStairsBlock extends StairBlock {
                 snow.shrink(1);
             }
 
+            if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.ROOF_MANGROVE_STAIRS.get() ) {
+                System.out.println("GO GO SNOWY STAIRS!!");
+                level.setBlock(pos, ModBlocks.SNOWY_MANGROVE_STAIRS.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(HALF, state.getValue(HALF)).setValue(SHAPE, state.getValue(SHAPE)),3);
+                snow.shrink(1);
+            }
+
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.ROOF_BIRCH_STAIRS.get() ) {
                 System.out.println("GO GO SNOWY STAIRS!!");
                 level.setBlock(pos, ModBlocks.SNOWY_BIRCH_STAIRS.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(HALF, state.getValue(HALF)).setValue(SHAPE, state.getValue(SHAPE)),3);

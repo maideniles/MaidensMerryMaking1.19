@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "maidensmerrymaking:block/wreath_lights_fence_gate_closed",
+	"parent": "maidensmerrymaking:block/wreath_fence_gate_closed",
 	"textures": {
 		"0": "block/warped_planks",
 		"1": "maidensmerrymaking:block/fence_garland",

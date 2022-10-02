@@ -1,15 +1,6 @@
+
+
 {
-  "type": "forge:conditional",
-  "recipes": [
-    {
-      "conditions": [
-        {
-          "type": "maidensmerrymaking:st_patricks_day_enabled"
-        }
-      ],
-	  
-	  
-      "recipe": {
         "type": "minecraft:crafting_shapeless",
         "ingredients": [
 		
@@ -42,16 +33,4 @@
 		"item": "maidensmerrymaking:green_beer",
 		"count": 1
 			}
-		}
-	  }
-	]
-	  
 }
-
-
-
-
-
-
-
-

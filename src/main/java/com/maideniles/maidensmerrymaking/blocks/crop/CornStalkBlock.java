@@ -178,7 +178,7 @@ public class CornStalkBlock extends CropBlock implements BonemealableBlock
     @Override
     public InteractionResult use(BlockState state, Level p_60504_, BlockPos pos, Player player, InteractionHand hand, BlockHitResult p_60508_) {
         int i = state.getValue(AGE);
-        Random random = (Random) player.getRandom();
+        Random random = new Random();
         boolean flag = i == 3;
         if (!flag && player.getItemInHand(hand).getItem() == Items.BONE_MEAL) {
             return InteractionResult.FAIL;

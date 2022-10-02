@@ -61,7 +61,7 @@ public class HalloweenTreatBagItem extends Item {
         if (rand.nextInt(30) == 0){
             entity.drop(rare1,false);
         }
-        entity.addItem(new ItemStack(Items.ACACIA_BUTTON));
+
 
 
             stack.shrink(1);

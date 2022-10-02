@@ -50,7 +50,8 @@ public class FireplaceLogsOn extends HorizontalDecoBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult pHit) {
-        Random random = (Random) level.getRandom();
+
+        Random random = new Random();
         Boolean burnt = Boolean.FALSE;
 
         ItemStack stack = player.getItemInHand(hand);

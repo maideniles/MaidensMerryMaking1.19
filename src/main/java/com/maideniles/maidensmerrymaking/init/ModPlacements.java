@@ -34,11 +34,11 @@ public class ModPlacements {
 
     public static final RegistryObject<PlacedFeature> TINY_SPRUCE_PLACEMENT = PLACED_FEATURES.register("tiny_spruce_placement",
       () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) ModFeatures.TINY_SPRUCE_CONFIG,
-              VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), Blocks.OAK_SAPLING)));
+              VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1), Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<PlacedFeature> HOLLY_PLACEMENT = PLACED_FEATURES.register("holly_placement",
             () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) ModFeatures.HOLLY_TREE,
-                    VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), Blocks.OAK_SAPLING)));
+                    VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1), Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<PlacedFeature> EASTER_EGG_GEN_PLACEMENT = PLACED_FEATURES.register("easter_egg_placement",
             () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>)

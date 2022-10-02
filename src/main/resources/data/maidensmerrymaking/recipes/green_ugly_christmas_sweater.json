@@ -1,14 +1,5 @@
 {
-  "type": "forge:conditional",
-  "recipes": [
-    {
-      "conditions": [
-        {
-          "type": "maidensmerrymaking:christmas_enabled"
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:crafting_shaped",
+      "type": "minecraft:crafting_shaped",
         "pattern": [
            "DWD",
 		   "DDD",
@@ -25,7 +16,4 @@
         "result": {
           "item": "maidensmerrymaking:green_ugly_christmas_sweater"
         }
-      }
-    }
-  ]
 }

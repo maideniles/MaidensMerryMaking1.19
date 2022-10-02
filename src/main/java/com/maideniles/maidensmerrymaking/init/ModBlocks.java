@@ -418,6 +418,24 @@ public static final RegistryObject<Block> GELT = registerBlock("gelt",
     public static final RegistryObject<Block> MANTEL_CRIMSON_LEG_RIGHT = BLOCKS.register("mantel_crimson_leg_right",
             () -> new MantelLegRight(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F).requiresCorrectToolForDrops()));
 
+    //MANGROVE MANTEL BLOCKS//
+    public static final RegistryObject<Block> MANTEL_MANGROVE_NORMAL = registerBlock("mantel_normal_mangrove",
+            () -> new MantelBlockMangrove(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> MANTEL_MANGROVE_TOP_MIDDLE = BLOCKS.register("mantel_mangrove_top_middle_stocking",
+            () -> new MantelTopCenterStocking(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MANTEL_MANGROVE_TOP_LEFT_STOCKING = BLOCKS.register("mantel_mangrove_top_left_stocking",
+            () -> new MantelTopLeftStocking(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MANTEL_MANGROVE_TOP_RIGHT_STOCKING = BLOCKS.register("mantel_mangrove_top_right_stocking",
+            () -> new MantelTopRightStocking(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MANTEL_MANGROVE_LEG_LEFT = BLOCKS.register("mantel_mangrove_leg_left",
+            () -> new MantelLegLeft(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MANTEL_MANGROVE_LEG_RIGHT = BLOCKS.register("mantel_mangrove_leg_right",
+            () -> new MantelLegRight(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F).requiresCorrectToolForDrops()));
     //WARPED MANTEL BLOCKS//
     public static final RegistryObject<Block> MANTEL_WARPED_NORMAL = registerBlock("mantel_normal_warped",
             () -> new MantelBlockWarped(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
@@ -763,6 +781,10 @@ public static final RegistryObject<Block> GELT = registerBlock("gelt",
     public static final RegistryObject<Block> ROOF_CRIMSON_STAIRS = registerBlock( "roof_crimson_stairs",
             () -> new SnowyStairsBlock( Blocks.SPRUCE_PLANKS.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(0.5F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> ROOF_MANGROVE_STAIRS = registerBlock( "roof_mangrove_stairs",
+            () -> new SnowyStairsBlock( Blocks.MANGROVE_PLANKS.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(0.5F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
 //ROOF TILES OTHER STAIRS//
 public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock( "roof_polished_blackstone_brick_stairs",
         () -> new StairBlock(() -> Blocks.SMOOTH_QUARTZ.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD)
@@ -814,6 +836,9 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
             () -> new StairBlock(() -> Blocks.SMOOTH_QUARTZ.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(0.5F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
 
+    public static final RegistryObject<Block> SNOWY_MANGROVE_STAIRS = registerBlock( "snowy_mangrove_stairs",
+            () -> new SnowyStairsBlock( Blocks.MANGROVE_PLANKS.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(0.5F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
 //SNOWY OTHER STAIRS//
     public static final RegistryObject<Block> SNOWY_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock( "snowy_polished_blackstone_brick_stairs",
             () -> new StairBlock(() -> Blocks.SMOOTH_QUARTZ.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD)
@@ -828,27 +853,30 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
                     .strength(0.5F, 2.0F)), ModItemGroups.MAIDENS_WINTER_GROUP);
 
     public static final RegistryObject<Block> ACACIA_ROOF_SLAB = registerBlock("acacia_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> BIRCH_ROOF_SLAB = registerBlock("birch_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> OAK_ROOF_SLAB = registerBlock("oak_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> DARK_OAK_ROOF_SLAB = registerBlock("dark_oak_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> SPRUCE_ROOF_SLAB = registerBlock("spruce_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> JUNGLE_ROOF_SLAB = registerBlock("jungle_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CRIMSON_ROOF_SLAB = registerBlock("crimson_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> MANGROVE_ROOF_SLAB = registerBlock("mangrove_roof_slab",
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> WARPED_ROOF_SLAB = registerBlock("warped_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> POLISHED_BLACKSTONE_BRICK_ROOF_SLAB = registerBlock("polished_blackstone_brick_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> DEEPSLATE_BRICK_ROOF_SLAB = registerBlock("deepslate_brick_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> STONE_BRICK_ROOF_SLAB = registerBlock("stone_brick_roof_slab",
-            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+            () -> new SnowySlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).sound(SoundType.WOOD)));
 
 
     public static final RegistryObject<Block> ACACIA_SNOWY_SLAB = registerBlock("acacia_snowy_slab",
@@ -865,8 +893,12 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
     public static final RegistryObject<Block> CRIMSON_SNOWY_SLAB = registerBlock("crimson_snowy_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+
+    public static final RegistryObject<Block> MANGROVE_SNOWY_SLAB = registerBlock("mangrove_snowy_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
     public static final RegistryObject<Block> WARPED_SNOWY_SLAB = registerBlock("warped_snowy_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
+
     public static final RegistryObject<Block> POLISHED_BLACKSTONE_BRICK_SNOWY_SLAB = registerBlock("polished_blackstone_brick_snowy_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SNOW)));
     public static final RegistryObject<Block> DEEPSLATE_BRICK_SNOWY_SLAB = registerBlock("deepslate_brick_snowy_slab",
@@ -900,6 +932,9 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> CRIMSON_WREATH_DOOR = registerBlock("crimson_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)));
 
+    public static final RegistryObject<Block> MANGROVE_WREATH_DOOR = registerBlock("mangrove_wreath_door",
+            () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)));
+
     public static final RegistryObject<Block> WARPED_WREATH_DOOR = registerBlock("warped_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)));
 
@@ -910,59 +945,65 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
 
     //WREATH LIGHTS DOORS//
 
-    public static final RegistryObject<Block> ACACIA_WREATH_LIGHTS_WHITE_DOOR = registerBlock("acacia_wreath_lights_white_door",
+    public static final RegistryObject<Block> ACACIA_WREATH_LIGHTS_WHITE_DOOR = registerBlock("acacia_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> BIRCH_WREATH_LIGHTS_WHITE_DOOR = registerBlock("birch_wreath_lights_white_door",
+    public static final RegistryObject<Block> BIRCH_WREATH_LIGHTS_WHITE_DOOR = registerBlock("birch_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> OAK_WREATH_LIGHTS_WHITE_DOOR = registerBlock("oak_wreath_lights_white_door",
+    public static final RegistryObject<Block> OAK_WREATH_LIGHTS_WHITE_DOOR = registerBlock("oak_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> SPRUCE_WREATH_LIGHTS_WHITE_DOOR = registerBlock("spruce_wreath_lights_white_door",
+    public static final RegistryObject<Block> SPRUCE_WREATH_LIGHTS_WHITE_DOOR = registerBlock("spruce_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> DARK_OAK_WREATH_LIGHTS_WHITE_DOOR = registerBlock("dark_oak_wreath_lights_white_door",
+    public static final RegistryObject<Block> DARK_OAK_WREATH_LIGHTS_WHITE_DOOR = registerBlock("dark_oak_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> JUNGLE_WREATH_LIGHTS_WHITE_DOOR = registerBlock("jungle_wreath_lights_white_door",
+    public static final RegistryObject<Block> JUNGLE_WREATH_LIGHTS_WHITE_DOOR = registerBlock("jungle_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> CRIMSON_WREATH_LIGHTS_WHITE_DOOR = registerBlock("crimson_wreath_lights_white_door",
+    public static final RegistryObject<Block> CRIMSON_WREATH_LIGHTS_WHITE_DOOR = registerBlock("crimson_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> WARPED_WREATH_LIGHTS_WHITE_DOOR = registerBlock("warped_wreath_lights_white_door",
+    public static final RegistryObject<Block> MANGROVE_WREATH_LIGHTS_WHITE_DOOR = registerBlock("mangrove_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> IRON_WREATH_LIGHTS_WHITE_DOOR = registerBlock("iron_wreath_lights_white_door",
+    public static final RegistryObject<Block> WARPED_WREATH_LIGHTS_WHITE_DOOR = registerBlock("warped_lit_wreath_door",
+            () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> IRON_WREATH_LIGHTS_WHITE_DOOR = registerBlock("iron_lit_wreath_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
 
-    public static final RegistryObject<Block> ACACIA_WREATH_LIGHTS_MULTI_DOOR = registerBlock("acacia_wreath_lights_multi_door",
+    public static final RegistryObject<Block> ACACIA_WREATH_LIGHTS_MULTI_DOOR = registerBlock("acacia_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> BIRCH_WREATH_LIGHTS_MULTI_DOOR = registerBlock("birch_wreath_lights_multi_door",
+    public static final RegistryObject<Block> BIRCH_WREATH_LIGHTS_MULTI_DOOR = registerBlock("birch_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> OAK_WREATH_LIGHTS_MULTI_DOOR = registerBlock("oak_wreath_lights_multi_door",
+    public static final RegistryObject<Block> OAK_WREATH_LIGHTS_MULTI_DOOR = registerBlock("oak_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> SPRUCE_WREATH_LIGHTS_MULTI_DOOR = registerBlock("spruce_wreath_lights_multi_door",
+    public static final RegistryObject<Block> SPRUCE_WREATH_LIGHTS_MULTI_DOOR = registerBlock("spruce_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> DARK_OAK_WREATH_LIGHTS_MULTI_DOOR = registerBlock("dark_oak_wreath_lights_multi_door",
+    public static final RegistryObject<Block> DARK_OAK_WREATH_LIGHTS_MULTI_DOOR = registerBlock("dark_oak_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> JUNGLE_WREATH_LIGHTS_MULTI_DOOR = registerBlock("jungle_wreath_lights_multi_door",
+    public static final RegistryObject<Block> JUNGLE_WREATH_LIGHTS_MULTI_DOOR = registerBlock("jungle_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> CRIMSON_WREATH_LIGHTS_MULTI_DOOR = registerBlock("crimson_wreath_lights_multi_door",
+    public static final RegistryObject<Block> CRIMSON_WREATH_LIGHTS_MULTI_DOOR = registerBlock("crimson_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> WARPED_WREATH_LIGHTS_MULTI_DOOR = registerBlock("warped_wreath_lights_multi_door",
+    public static final RegistryObject<Block> MANGROVE_WREATH_LIGHTS_MULTI_DOOR = registerBlock("mangrove_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
-    public static final RegistryObject<Block> IRON_WREATH_LIGHTS_MULTI_DOOR = registerBlock("iron_wreath_lights_multi_door",
+    public static final RegistryObject<Block> WARPED_WREATH_LIGHTS_MULTI_DOOR = registerBlock("warped_lit_wreath_multi_door",
+            () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> IRON_WREATH_LIGHTS_MULTI_DOOR = registerBlock("iron_lit_wreath_multi_door",
             () -> new MaidensDoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).noOcclusion().strength(0.5F, 2.0F).lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
     //FENCES//
@@ -991,6 +1032,8 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> CRIMSON_PICKET_FENCE = registerBlock("crimson_picket_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion()));
 
+    public static final RegistryObject<Block> MANGROVE_PICKET_FENCE = registerBlock("mangrove_picket_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion()));
    public static final RegistryObject<Block> ACACIA_WREATH_FENCE = registerBlock("acacia_wreath_fence",
            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion()));
 
@@ -1017,6 +1060,9 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> CRIMSON_WREATH_FENCE = registerBlock("crimson_wreath_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion()));
 
+    public static final RegistryObject<Block> MANGROVE_WREATH_FENCE = registerBlock("mangrove_wreath_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion()));
+
     public static final RegistryObject<Block> ACACIA_WREATH_LIGHTS_FENCE = registerBlock("acacia_wreath_lights_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
@@ -1041,6 +1087,9 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> CRIMSON_WREATH_LIGHTS_FENCE = registerBlock("crimson_wreath_lights_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
+    public static final RegistryObject<Block> MANGROVE_WREATH_LIGHTS_FENCE = registerBlock("mangrove_wreath_lights_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
     public static final RegistryObject<Block> ACACIA_WREATH_MULTI_FENCE = registerBlock("acacia_wreath_multi_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
@@ -1063,6 +1112,9 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
     public static final RegistryObject<Block> CRIMSON_WREATH_MULTI_FENCE = registerBlock("crimson_wreath_multi_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_WREATH_MULTI_FENCE = registerBlock("mangrove_wreath_multi_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.4F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
 
@@ -1092,6 +1144,10 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> CRIMSON_PICKET_FENCE_GATE = registerBlock("crimson_picket_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion()));
 
+    public static final RegistryObject<Block> MANGROVE_PICKET_FENCE_GATE = registerBlock("mangrove_picket_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion()));
+
+
     public static final RegistryObject<Block> ACACIA_WREATH_FENCE_GATE = registerBlock("acacia_wreath_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion()));
 
@@ -1116,6 +1172,8 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> CRIMSON_WREATH_FENCE_GATE = registerBlock("crimson_wreath_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion()));
 
+    public static final RegistryObject<Block> MANGROVE_WREATH_FENCE_GATE = registerBlock("mangrove_wreath_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion()));
     public static final RegistryObject<Block> ACACIA_WREATH_LIGHTS_FENCE_GATE = registerBlock("acacia_wreath_lights_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
@@ -1138,6 +1196,9 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
     public static final RegistryObject<Block> CRIMSON_WREATH_LIGHTS_FENCE_GATE = registerBlock("crimson_wreath_lights_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_WREATH_LIGHTS_FENCE_GATE = registerBlock("mangrove_wreath_lights_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
 
     public static final RegistryObject<Block> ACACIA_WREATH_MULTI_FENCE_GATE = registerBlock("acacia_wreath_multi_fence_gate",
@@ -1163,6 +1224,10 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
 
     public static final RegistryObject<Block> CRIMSON_WREATH_MULTI_FENCE_GATE = registerBlock("crimson_wreath_multi_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_WREATH_MULTI_FENCE_GATE = registerBlock("mangrove_wreath_multi_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.6F, 2.5F).noOcclusion().lightLevel((p_50828_) -> { return 12; })), ModItemGroups.MAIDENS_WINTER_GROUP);
+
 
     //GARLAND-DECORATED WALLS//
 
@@ -1708,6 +1773,14 @@ public static final RegistryObject<Block> ROOF_POLISHED_BLACKSTONE_BRICK_STAIRS 
     public static final RegistryObject<Block> GRAVESTONE_OBELISK = registerBlock("gravestone_obelisk",
             () -> new GravestoneBlock(Block.Properties.of(Material.STONE).strength(1.0F, 2.5F).noOcclusion().sound(SoundType.CALCITE)) {
             },ModItemGroups.MAIDENS_HALLOWEEN_GROUP);
+
+    public static final RegistryObject<Block> MANTEL_DECO_BOO = registerBlock("mantel_deco_boo",
+            () -> new MantelDecoBlock(Block.Properties.of(Material.METAL).strength(0.5F, 2.0F).noOcclusion()), ModItemGroups.MAIDENS_HALLOWEEN_GROUP);
+
+    public static final RegistryObject<Block> MANTEL_DECO_HAUNTED_HOUSE = registerBlock("mantel_deco_haunted_house",
+            () -> new MantelDecoBlock(Block.Properties.of(Material.METAL).strength(0.5F, 2.0F).noOcclusion().lightLevel((p_50828_) -> { return 3; })), ModItemGroups.MAIDENS_HALLOWEEN_GROUP);
+
+
 
 
 

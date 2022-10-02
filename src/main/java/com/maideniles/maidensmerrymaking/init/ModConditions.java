@@ -5,9 +5,7 @@ import com.maideniles.maidensmerrymaking.conditions.ChristmasEnabledCondition;
 import com.maideniles.maidensmerrymaking.conditions.EasterEnabledCondition;
 import com.maideniles.maidensmerrymaking.conditions.HalloweenEnabledCondition;
 import com.maideniles.maidensmerrymaking.conditions.StPatricksDayEnabledCondition;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
-import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,7 +19,7 @@ public class ModConditions {
 
 
     @SubscribeEvent
-    public static void registerConditionSerializers(RegisterEvent event) {
+    public static Object registerConditionSerializers(RegisterEvent event) {
         if(Objects.equals(event.getForgeRegistry(), ForgeRegistries.RECIPE_SERIALIZERS)) {
 
             CraftingHelper.register(new ChristmasEnabledCondition.Serializer());
@@ -30,6 +28,7 @@ public class ModConditions {
             CraftingHelper.register(new HalloweenEnabledCondition.Serializer());
 
         }
+        return null;
     }
 
 }

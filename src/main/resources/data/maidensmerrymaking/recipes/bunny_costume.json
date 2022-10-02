@@ -1,14 +1,7 @@
+
+
 {
-  "type": "forge:conditional",
-  "recipes": [
-    {
-      "conditions": [
-        {
-          "type": "maidensmerrymaking:easter_enabled"
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:crafting_shaped",
+      "type": "minecraft:crafting_shaped",
         "pattern": [
            "DWD",
 		   "DDD",
@@ -25,7 +18,4 @@
         "result": {
           "item": "maidensmerrymaking:bunny_costume"
         }
-      }
-    }
-  ]
 }

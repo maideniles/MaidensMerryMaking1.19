@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:chests/jungle_temple"
     }
   ],
-  "addition": "maidensmerrymaking:halloween_music_disc",
+  "addition": "maidensmerrymaking:halloween_disc",
   "type": "maidensmerrymaking:halloween_chest_loot"
   }

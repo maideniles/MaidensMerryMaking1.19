@@ -1,0 +1,7 @@
+{
+  "parent": "maidensmerrymaking:block/wreath_door_bottom_left_open",
+  "textures": {
+    "bottom": "minecraft:block/mangrove_door_bottom",
+   "top": "minecraft:block/mangrove_door_top"
+  }
+}

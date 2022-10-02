@@ -1,14 +1,7 @@
+
+
 {
-  "type": "forge:conditional",
-  "recipes": [
-    {
-      "conditions": [
-        {
-          "type": "maidensmerrymaking:christmas_enabled"
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:crafting_shaped",
+      "type": "minecraft:crafting_shaped",
         "pattern": [
            "   ",
 		   "D D",
@@ -25,7 +18,4 @@
         "result": {
           "item": "maidensmerrymaking:santa_slippers"
         }
-      }
-    }
-  ]
 }
