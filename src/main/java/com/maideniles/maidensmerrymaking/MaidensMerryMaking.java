@@ -92,11 +92,11 @@ public class MaidensMerryMaking {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
-            if(!MerryMakingConfig.COSTUMES_ENABLED.get()== Boolean.FALSE){
+            if(MerryMakingConfig.COSTUMES_ENABLED.get()){
                 HalloweenEntityEvents.initializeMobs();
             }
 
-
+/*
             EntityRenderers.register(ModEntityTypes.COLORED_CHICKEN.get(), ColoredChickenRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.PINK_BUNNY.get(), PinkBunnyRenderer::new);
@@ -129,7 +129,7 @@ public class MaidensMerryMaking {
             EntityRenderers.register(ModEntityTypes.COSTUMED_WITCH.get(), WitchCostumeRenderer::new);
             EntityRenderers.register(ModEntityTypes.COSTUMED_CREEPER.get(), CreeperCostumeRenderer::new);
             EntityRenderers.register(ModEntityTypes.COSTUMED_SPIDER.get(), SpiderCostumeRenderer::new);
-
+*/
         }
     }
 
