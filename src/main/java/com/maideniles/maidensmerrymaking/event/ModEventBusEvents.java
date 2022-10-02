@@ -47,11 +47,6 @@ public class ModEventBusEvents {
         event.put(ModEntityTypes.COLORED_CHICKEN.get(), ColoredChickenEntity.setAttributes());
     }
 
-    @SubscribeEvent
-    public static void registerArmorRenderers(final EntityRenderersEvent.AddLayers event) {
-        GeoArmorRenderer.registerArmorRenderer(BunnyHoodArmorItem.class, new BunnyHoodArmorRenderer());
-        GeoArmorRenderer.registerArmorRenderer(RedChristmasArmorItem.class, new RedChristmasArmorRenderer());
-        GeoArmorRenderer.registerArmorRenderer(ReindeerEarsArmorItem.class, new ReindeerEarsArmorRenderer());
-    }
+
 
 }

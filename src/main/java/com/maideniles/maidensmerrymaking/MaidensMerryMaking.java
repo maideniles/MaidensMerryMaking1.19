@@ -7,8 +7,16 @@ import com.maideniles.maidensmerrymaking.entity.render.bunny.*;
 import com.maideniles.maidensmerrymaking.entity.render.halloween.*;
 import com.maideniles.maidensmerrymaking.event.HalloweenEntityEvents;
 import com.maideniles.maidensmerrymaking.init.*;
+import com.maideniles.maidensmerrymaking.items.armor.item.BunnyHoodArmorItem;
+import com.maideniles.maidensmerrymaking.items.armor.item.RedChristmasArmorItem;
+import com.maideniles.maidensmerrymaking.items.armor.item.ReindeerEarsArmorItem;
+import com.maideniles.maidensmerrymaking.items.armor.render.BunnyHoodArmorRenderer;
+import com.maideniles.maidensmerrymaking.items.armor.render.RedChristmasArmorRenderer;
+import com.maideniles.maidensmerrymaking.items.armor.render.ReindeerEarsArmorRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,6 +28,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 import java.util.Locale;
 
@@ -87,7 +96,7 @@ public class MaidensMerryMaking {
 
 
     }
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
@@ -96,7 +105,7 @@ public class MaidensMerryMaking {
                 HalloweenEntityEvents.initializeMobs();
             }
 
-/*
+
             EntityRenderers.register(ModEntityTypes.COLORED_CHICKEN.get(), ColoredChickenRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.PINK_BUNNY.get(), PinkBunnyRenderer::new);
@@ -129,9 +138,14 @@ public class MaidensMerryMaking {
             EntityRenderers.register(ModEntityTypes.COSTUMED_WITCH.get(), WitchCostumeRenderer::new);
             EntityRenderers.register(ModEntityTypes.COSTUMED_CREEPER.get(), CreeperCostumeRenderer::new);
             EntityRenderers.register(ModEntityTypes.COSTUMED_SPIDER.get(), SpiderCostumeRenderer::new);
-*/
+
+            GeoArmorRenderer.registerArmorRenderer(BunnyHoodArmorItem.class, new BunnyHoodArmorRenderer());
+            GeoArmorRenderer.registerArmorRenderer(RedChristmasArmorItem.class, new RedChristmasArmorRenderer());
+            GeoArmorRenderer.registerArmorRenderer(ReindeerEarsArmorItem.class, new ReindeerEarsArmorRenderer());
         }
     }
+
+
 
     public static ResourceLocation prefix(String name) {
         return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
