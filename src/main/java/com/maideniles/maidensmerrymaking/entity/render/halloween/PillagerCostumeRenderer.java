@@ -13,7 +13,7 @@ import net.minecraft.world.entity.monster.Pillager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class PillagerCostumeRenderer extends IllagerRenderer<Pillager> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

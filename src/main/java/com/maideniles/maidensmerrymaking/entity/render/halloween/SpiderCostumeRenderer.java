@@ -12,7 +12,7 @@ import net.minecraft.world.entity.monster.Spider;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class SpiderCostumeRenderer<T extends Spider> extends MobRenderer<T, SpiderModel<T>> {
     private static final ResourceLocation COSTUME_LOCATION = new ResourceLocation(MaidensMerryMaking.MOD_ID, "textures/entity/halloween/spider_costume.png");
 

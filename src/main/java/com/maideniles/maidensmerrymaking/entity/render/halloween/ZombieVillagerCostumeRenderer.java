@@ -13,7 +13,7 @@ import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class ZombieVillagerCostumeRenderer extends MobRenderer<ZombieVillager, ZombieVillagerModel<ZombieVillager>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

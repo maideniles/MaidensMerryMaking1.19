@@ -12,7 +12,7 @@ import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class WitherSkeletonCostumeRenderer extends MobRenderer<WitherSkeleton, SkeletonModel<WitherSkeleton>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

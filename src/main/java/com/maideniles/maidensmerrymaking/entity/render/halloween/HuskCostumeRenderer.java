@@ -11,7 +11,7 @@ import net.minecraft.world.entity.monster.Husk;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class HuskCostumeRenderer extends MobRenderer<Husk, ZombieModel<Husk>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

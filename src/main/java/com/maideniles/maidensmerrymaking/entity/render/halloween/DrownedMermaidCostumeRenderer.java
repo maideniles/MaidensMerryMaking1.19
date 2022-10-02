@@ -11,7 +11,7 @@ import net.minecraft.world.entity.monster.Drowned;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class DrownedMermaidCostumeRenderer extends MobRenderer<Drowned, DrownedModel<Drowned>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

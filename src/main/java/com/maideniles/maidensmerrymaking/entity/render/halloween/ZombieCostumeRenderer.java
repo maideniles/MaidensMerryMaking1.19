@@ -14,7 +14,7 @@ import net.minecraft.world.entity.monster.Zombie;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class ZombieCostumeRenderer extends AbstractZombieRenderer<Zombie, ZombieModel<Zombie>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

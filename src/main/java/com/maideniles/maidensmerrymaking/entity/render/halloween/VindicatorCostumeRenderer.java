@@ -11,7 +11,7 @@ import net.minecraft.world.entity.monster.Vindicator;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class VindicatorCostumeRenderer extends IllagerRenderer<Vindicator> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

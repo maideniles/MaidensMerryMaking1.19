@@ -11,7 +11,7 @@ import net.minecraft.world.entity.monster.Evoker;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class EvokerCostumeRenderer extends IllagerRenderer<Evoker> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

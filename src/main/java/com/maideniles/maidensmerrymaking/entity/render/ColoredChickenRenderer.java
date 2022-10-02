@@ -13,7 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 
-@OnlyIn(Dist.CLIENT)
+
 public class ColoredChickenRenderer extends MobRenderer<Chicken, ChickenModel<Chicken>> {
     private static final ResourceLocation CHICKEN_LOCATION = new ResourceLocation(MaidensMerryMaking.MOD_ID,"textures/entity/colored_chicken.png");
 

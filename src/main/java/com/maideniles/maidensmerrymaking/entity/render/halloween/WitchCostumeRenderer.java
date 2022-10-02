@@ -15,7 +15,7 @@ import net.minecraft.world.entity.monster.Witch;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class WitchCostumeRenderer extends MobRenderer<Witch, WitchModel<Witch>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

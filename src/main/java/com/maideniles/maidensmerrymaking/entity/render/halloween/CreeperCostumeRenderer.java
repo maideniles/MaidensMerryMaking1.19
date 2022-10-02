@@ -11,9 +11,9 @@ import net.minecraft.world.entity.monster.Creeper;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
 
-@OnlyIn(Dist.CLIENT)
+
+
 public class CreeperCostumeRenderer extends MobRenderer<Creeper, CreeperModel<Creeper>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER

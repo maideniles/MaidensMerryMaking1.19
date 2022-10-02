@@ -14,7 +14,7 @@ import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
+
 public class SkeletonCostumeRenderer extends MobRenderer<Skeleton, SkeletonModel<Skeleton>> {
 
     //HALLOWEEN COSTUME LOCATION--COSTUME DECIDE LATER
