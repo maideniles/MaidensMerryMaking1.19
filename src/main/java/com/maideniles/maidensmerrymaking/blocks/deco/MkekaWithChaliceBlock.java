@@ -81,7 +81,7 @@ public class MkekaWithChaliceBlock extends HorizontalDecoBlock{
         if(has_cup = level.getBlockState(pos).getValue(MkekaWithChaliceBlock.CUP)) {
             popResource(level, pos, new ItemStack(Item.byBlock(ModBlocks.CHALICE.get()), 1));
 
-            System.out.println("DROPPED_CUP");
+
         }
     }
 

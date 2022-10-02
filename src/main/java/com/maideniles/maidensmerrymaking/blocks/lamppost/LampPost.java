@@ -81,7 +81,7 @@ public class LampPost extends HorizontalDecoBlock {
         if (!level.isClientSide()) {
 
             if (torch.getItem() == Items.TORCH ) {
-                System.out.println("YOU LIGHT UP MY LIFE!");
+
                 level.setBlock(pos, ModBlocks.LAMP_POST_ON.get().defaultBlockState().setValue(FACING, state.getValue(FACING)),3);
                 torch.shrink(1);
             }

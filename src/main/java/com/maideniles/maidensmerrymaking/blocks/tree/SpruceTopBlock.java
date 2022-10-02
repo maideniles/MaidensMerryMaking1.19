@@ -59,7 +59,7 @@ public class SpruceTopBlock extends BushBlock {
             level.setBlock(pos.offset(0,-2,0), Blocks.AIR.defaultBlockState(),3);
             level.setBlock(pos.below(), Blocks.AIR.defaultBlockState(), 35);
             level.setBlock(pos, Blocks.AIR.defaultBlockState(), 35);
-            System.out.println("NO MORE TREE");
+
 
         }
 

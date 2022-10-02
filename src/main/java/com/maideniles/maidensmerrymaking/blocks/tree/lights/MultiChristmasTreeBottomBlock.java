@@ -55,7 +55,7 @@ public class MultiChristmasTreeBottomBlock extends Block {
 
             if (tree.getItem() == ModItems.ORNAMENTS.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos, ModBlocks.DECORATED_MULTI_CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos.above(), ModBlocks.DECORATED_MULTI_CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos.above(2), ModBlocks.DECORATED_MULTI_CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);
@@ -71,7 +71,7 @@ public class MultiChristmasTreeBottomBlock extends Block {
 
             if (tree.getItem() == ModItems.ORNAMENTS_WHITE.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos, ModBlocks.DECORATED_WHITE_MULTI_CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos.above(), ModBlocks.DECORATED_WHITE_MULTI_CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos.above(2), ModBlocks.DECORATED_WHITE_MULTI_CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);

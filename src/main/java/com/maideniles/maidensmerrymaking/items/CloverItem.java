@@ -19,7 +19,7 @@ public class CloverItem extends Item {
         ItemStack stack = entity.getItemInHand(hand);
 
         entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 2600, 0));
-        System.out.println("GAVE LUCK POTION EFFECT TO PLAYER");
+
         stack.getItem().setDamage(stack, 1);
 
         return InteractionResultHolder.consume(stack);

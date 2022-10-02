@@ -54,7 +54,7 @@ public class SpruceMiddleBlock extends BushBlock {
 
             level.setBlock(pos.below(), Blocks.AIR.defaultBlockState(), 35);
             level.setBlock(pos, Blocks.AIR.defaultBlockState(), 35);
-            System.out.println("NO MORE TREE");
+
         }
 
     }

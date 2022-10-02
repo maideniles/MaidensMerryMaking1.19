@@ -63,7 +63,7 @@ public class MenorahBlock extends HorizontalDecoBlock{
 
         if (!level.isClientSide()) {
             if(stack.getItem() == Items.FLINT_AND_STEEL){
-                System.out.println("LIT MENORAH");
+
                 level.setBlock(pos, ModBlocks.MENORAH_LIT.get().defaultBlockState().setValue(FACING, state.getValue(FACING)), 3);
                 stack.setDamageValue(1);
                 player.getItemInHand(hand).hurtAndBreak(1, player, (p_41303_) -> {
@@ -85,6 +85,6 @@ public class MenorahBlock extends HorizontalDecoBlock{
 
         popResource(level, pos, new ItemStack(Items.CANDLE,8));
 
-        System.out.println("DROPPED_CANDLES");
+
     }
 }

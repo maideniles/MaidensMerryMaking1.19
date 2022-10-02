@@ -62,7 +62,7 @@ public class FireplaceLogsOn extends HorizontalDecoBlock {
 
             if (stack.getItem() == Items.WATER_BUCKET) {
 
-                System.out.println("FIREPLACE QUENCHED");
+
                 stack.shrink(1);
                 player.getInventory().add(new ItemStack(Items.BUCKET));
                 level.setBlock(pos, ModBlocks.FIREPLACE_LOGS.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(Fireplace.BURNED, Boolean.TRUE), 3);
@@ -74,7 +74,7 @@ public class FireplaceLogsOn extends HorizontalDecoBlock {
             if(burnt == level.getBlockState(pos).getValue(FireplaceLogsOn.BURNING)) {
 
                 if (stack.getItem() == Items.FLINT_AND_STEEL) {
-                    System.out.println("LIT FIREPLACE AGAIN");
+
                     level.setBlock(pos, this.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(BURNING, Boolean.TRUE), 3);
 
 

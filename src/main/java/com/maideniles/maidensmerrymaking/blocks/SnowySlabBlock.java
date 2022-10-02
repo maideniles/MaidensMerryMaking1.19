@@ -27,73 +27,73 @@ public class SnowySlabBlock extends SlabBlock {
         if (!level.isClientSide()) {
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.ACACIA_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.ACACIA_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.MANGROVE_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.MANGROVE_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.BIRCH_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.BIRCH_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.DARK_OAK_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.DARK_OAK_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.JUNGLE_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.JUNGLE_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.OAK_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.OAK_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.SPRUCE_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.SPRUCE_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.WARPED_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.WARPED_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.CRIMSON_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.CRIMSON_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.POLISHED_BLACKSTONE_BRICK_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.POLISHED_BLACKSTONE_BRICK_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.DEEPSLATE_BRICK_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.DEEPSLATE_BRICK_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }
 
             if (snow.getItem() == Items.SNOWBALL && blockstate.getBlock() == ModBlocks.STONE_BRICK_ROOF_SLAB.get() ) {
-                System.out.println("GO GO SNOWY STAIRS!!");
+
                 level.setBlock(pos, ModBlocks.STONE_BRICK_SNOWY_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE)),3);
                 snow.shrink(1);
             }

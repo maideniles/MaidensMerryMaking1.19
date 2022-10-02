@@ -16,7 +16,6 @@ import com.maideniles.maidensmerrymaking.items.armor.render.ReindeerEarsArmorRen
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -85,7 +84,7 @@ public class MaidensMerryMaking {
 
         event.enqueueWork(() -> {
 
-            //HALLOWEEN COSTUMED MOBS
+
 
 
 

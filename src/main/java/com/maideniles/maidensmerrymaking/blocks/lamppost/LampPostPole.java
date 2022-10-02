@@ -45,25 +45,25 @@ public class LampPostPole extends HorizontalDecoBlock {
         if (!level.isClientSide()) {
 
             if (item.getItem() == Item.byBlock(ModBlocks.CHRISTMAS_WREATH.get()) ){
-                System.out.println("WREATH");
+
                 level.setBlock(pos, ModBlocks.LAMP_POST_POLE_WREATH.get().defaultBlockState().setValue(FACING, state.getValue(FACING)),3);
                item.shrink(1);
             }
 
             if (item.getItem() == Item.byBlock(ModBlocks.CHRISTMAS_WREATH_WHITE_LIGHTS.get()) ){
-                System.out.println("WREATH WHITE LIGHTS");
+
                 level.setBlock(pos, ModBlocks.LAMP_POST_POLE_WREATH_WHITE.get().defaultBlockState().setValue(FACING, state.getValue(FACING)),3);
                 item.shrink(1);
             }
 
             if (item.getItem() == Item.byBlock(ModBlocks.CHRISTMAS_WREATH_MULTI_LIGHTS.get())){
-                System.out.println("WREATH MULTI LIGHTS");
+
                 level.setBlock(pos, ModBlocks.LAMP_POST_POLE_WREATH_MULTI.get().defaultBlockState().setValue(FACING, state.getValue(FACING)),3);
                 item.shrink(1);
             }
 
             if (item.getItem() == ModItems.BOW.get()){
-                System.out.println("POST WITH BOW");
+
                 level.setBlock(pos, ModBlocks.LAMP_POST_POLE_BOW.get().defaultBlockState().setValue(FACING, state.getValue(FACING)),3);
                 item.shrink(1);
             }

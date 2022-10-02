@@ -94,7 +94,7 @@ public class MantelTopLeftStocking extends HorizontalDecoBlock {
 
             if (stocking.getItem() == ModItems.STOCKING.get()) {
 
-                System.out.println("THE STOCKINGS WERE HUNG");
+
                 level.setBlock(pos, this.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(STOCKING, Boolean.TRUE), 3);
 
 
@@ -120,17 +120,17 @@ public class MantelTopLeftStocking extends HorizontalDecoBlock {
 
             if ( top_left == level.getBlockState(pos).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             if (top_middle == level.getBlockState(pos.east()).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.east(2)).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
             //destroy LEG block below//
@@ -148,17 +148,17 @@ public class MantelTopLeftStocking extends HorizontalDecoBlock {
 
            if ( top_left == level.getBlockState(pos).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             if (top_middle == level.getBlockState(pos.west()).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.west(2)).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
 
@@ -177,17 +177,17 @@ public class MantelTopLeftStocking extends HorizontalDecoBlock {
 
            if ( top_left == level.getBlockState(pos).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             if (top_middle == level.getBlockState(pos.south()).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.south(2)).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
             //destroy block below//
@@ -205,17 +205,17 @@ public class MantelTopLeftStocking extends HorizontalDecoBlock {
 
             if ( top_left == level.getBlockState(pos).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             if (top_middle == level.getBlockState(pos.north()).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.north(2)).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
 

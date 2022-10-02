@@ -68,7 +68,7 @@ public class MkekaWithKinaraBlock extends HorizontalDecoBlock{
 
         if (!level.isClientSide()) {
             if(stack.getItem() == Items.FLINT_AND_STEEL){
-                System.out.println("LIT KINARA");
+
                 level.setBlock(pos, ModBlocks.MKEKA_WITH_KINARA_LIT.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(MkekaWithKinaraBlock.LIT, Boolean.TRUE), 3);
               //  level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(),3);
                 return InteractionResult.FAIL;

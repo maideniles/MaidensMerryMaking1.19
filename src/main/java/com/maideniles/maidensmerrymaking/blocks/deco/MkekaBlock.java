@@ -62,7 +62,7 @@ public class MkekaBlock extends HorizontalDecoBlock{
                 level.setBlock(pos, ModBlocks.MKEKA_WITH_KINARA.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(MkekaWithKinaraBlock.LIT, Boolean.FALSE), 3);
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3);
 
-                System.out.println("PLACED KINARA ON MAT");
+
                 stack.shrink(1);
             }
 
@@ -70,7 +70,7 @@ public class MkekaBlock extends HorizontalDecoBlock{
                 level.setBlock(pos, ModBlocks.MKEKA_WITH_CHALICE.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(MkekaWithChaliceBlock.CUP, Boolean.TRUE), 3);
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3);
 
-                System.out.println("PLACED CHALICE ON MAT");
+
                 stack.shrink(1);
             }
 
@@ -79,7 +79,7 @@ public class MkekaBlock extends HorizontalDecoBlock{
                 level.setBlock(pos, ModBlocks.MKEKA_WITH_CORN_1.get().defaultBlockState().setValue(FACING, state.getValue(FACING)), 3);
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3);
 
-                System.out.println("PLACED CORN ON MAT");
+
                 stack.shrink(1);
             }
 
@@ -87,7 +87,7 @@ public class MkekaBlock extends HorizontalDecoBlock{
                 level.setBlock(pos, ModBlocks.MKEKA_WITH_CORN_2.get().defaultBlockState().setValue(FACING, state.getValue(FACING)), 3);
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3);
 
-                System.out.println("PLACED 2 CORN ON MAT");
+
                 stack.shrink(1);
             }
 
@@ -95,7 +95,7 @@ public class MkekaBlock extends HorizontalDecoBlock{
                 level.setBlock(pos, ModBlocks.MKEKA_WITH_CORN_3.get().defaultBlockState().setValue(FACING, state.getValue(FACING)), 3);
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3);
 
-                System.out.println("PLACED 3 CORN ON MAT");
+
                 stack.shrink(1);
             }
 
@@ -113,16 +113,16 @@ Block corn = level.getBlockState(pos).getBlock();
 
 if(corn == ModBlocks.MKEKA_WITH_CORN_1.get()){
     popResource(level, pos, new ItemStack(ModItems.CORN.get(),1));
-    System.out.println("DROPPED 1 CORN");
+
 }
         if(corn == ModBlocks.MKEKA_WITH_CORN_2.get()){
             popResource(level, pos, new ItemStack(ModItems.CORN.get(),2));
-            System.out.println("DROPPED 2 CORN");
+
         }
 
         if(corn == ModBlocks.MKEKA_WITH_CORN_3.get()){
             popResource(level, pos, new ItemStack(ModItems.CORN.get(),3));
-            System.out.println("DROPPED 3 CORN");
+
         }
 
     }

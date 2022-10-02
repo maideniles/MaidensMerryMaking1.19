@@ -87,7 +87,7 @@ public class GreenBeerItem extends Item {
                 if (entityLiving instanceof ServerPlayer) {
                     BlockPos pos = entityLiving.getOnPos();
                     ModAdvancements.DRUNK_ON_GREEN_BEER.trigger((ServerPlayer) entityLiving);
-                    System.out.println("DRUNK AS A SKUNK!");
+
                     popResource(pLevel, pos, new ItemStack(ModBlocks.GREEN_BEER_TROPHY.get()));
                 }
 

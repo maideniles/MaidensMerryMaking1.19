@@ -67,28 +67,28 @@ public Random rand = new Random();
             if (gift_id == 0) {
 
                 this.spawnPinkBunny((ServerLevel) level, pos);
-                System.out.println("GOT A PINK BUNNY!");
+
             } else if (gift_id == 1) {
                 this.spawnPurpleBunny((ServerLevel) level, pos);
-                System.out.println("GOT A PURPLE BUNNY!");
+
             }
 
 
             else if (gift_id == 2) {
                 this.spawnBlueBunny((ServerLevel) level, pos);
-                System.out.println("GOT A BLUE BUNNY!");
+
             }
 
 
             else if (gift_id == 3) {
                 this.spawnCyanBunny((ServerLevel) level, pos);
-                System.out.println("GOT A CYAN BUNNY!");
+
             }
 
 
             else if (gift_id == 4) {
                 this.spawnYellowBunny((ServerLevel) level, pos);
-                System.out.println("GOT A YELLOW BUNNY!");
+
             }
 
             else if (gift_id == 5) {

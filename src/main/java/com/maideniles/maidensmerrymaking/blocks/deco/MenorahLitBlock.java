@@ -55,6 +55,6 @@ public class MenorahLitBlock extends HorizontalDecoBlock{
 
         popResource(level, pos, new ItemStack(Items.CANDLE,8));
 
-        System.out.println("DROPPED_CANDLES");
+
     }
 }

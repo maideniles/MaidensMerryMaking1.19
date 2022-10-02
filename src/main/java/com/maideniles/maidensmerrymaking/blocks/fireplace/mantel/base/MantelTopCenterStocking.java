@@ -77,7 +77,7 @@ public class MantelTopCenterStocking extends MantelDecoBlock {
 
             if (stocking.getItem() == ModItems.STOCKING.get()) {
 
-                System.out.println("THE STOCKINGS WERE HUNG");
+
                 level.setBlock(pos, this.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(STOCKING, Boolean.TRUE), 3);
 
 
@@ -110,17 +110,17 @@ public class MantelTopCenterStocking extends MantelDecoBlock {
 
             if ( top_middle == level.getBlockState(pos).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
             if (top_left == level.getBlockState(pos.west()).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.east()).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             //destroy block to left//
@@ -137,17 +137,17 @@ public class MantelTopCenterStocking extends MantelDecoBlock {
 
             if ( top_middle == level.getBlockState(pos).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
             if (top_left == level.getBlockState(pos.east()).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.west()).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             //destroy block to left//
@@ -164,17 +164,17 @@ public class MantelTopCenterStocking extends MantelDecoBlock {
 
             if ( top_middle == level.getBlockState(pos).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
             if (top_left == level.getBlockState(pos.north()).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.south()).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             //destroy block to left//
@@ -191,17 +191,17 @@ public class MantelTopCenterStocking extends MantelDecoBlock {
 
             if ( top_middle == level.getBlockState(pos).getValue(MantelTopCenterStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP RIGHT");
+
             }
 
             if (top_left == level.getBlockState(pos.south()).getValue(MantelTopLeftStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP MIDDLE");
+
             }
 
             if (top_right == level.getBlockState(pos.north()).getValue(MantelTopRightStocking.STOCKING)) {
                 popResource(level, pos, new ItemStack(ModItems.STOCKING.get()));
-                System.out.println("DROPPED STOCKING FROM TOP LEFT");
+
             }
 
             //destroy block to left//

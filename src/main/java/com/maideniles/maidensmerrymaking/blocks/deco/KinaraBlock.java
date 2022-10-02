@@ -66,7 +66,7 @@ public class KinaraBlock extends HorizontalDecoBlock{
 
         if (!level.isClientSide()) {
             if(stack.getItem() == Items.FLINT_AND_STEEL){
-                System.out.println("LIT KINARA");
+
                 level.setBlock(pos, ModBlocks.KINARA_LIT.get().defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(KinaraBlock.LIT, Boolean.TRUE), 3);
                 stack.setDamageValue(1);
                 player.getItemInHand(hand).hurtAndBreak(1, player, (p_41303_) -> {

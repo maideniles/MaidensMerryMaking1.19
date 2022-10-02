@@ -78,7 +78,7 @@ public class LightsChristmasTreeMiddleBlock extends BushBlock {
 
             if (tree.getItem() == ModItems.ORNAMENTS.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos.below(), ModBlocks.DECORATED_LIGHTS_CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos, ModBlocks.DECORATED_LIGHTS_CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos.above(), ModBlocks.DECORATED_LIGHTS_CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);
@@ -94,7 +94,7 @@ public class LightsChristmasTreeMiddleBlock extends BushBlock {
 
             if (tree.getItem() == ModItems.ORNAMENTS_WHITE.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos.below(), ModBlocks.DECORATED_WHITE_LIGHTS_CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos, ModBlocks.DECORATED_WHITE_LIGHTS_CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos.above(), ModBlocks.DECORATED_WHITE_LIGHTS_CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);

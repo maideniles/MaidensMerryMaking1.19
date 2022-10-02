@@ -74,7 +74,7 @@ public class LightsChristmasTreeTopBlock extends BushBlock {
 
             if (tree.getItem() == ModItems.ORNAMENTS.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos.below(2), ModBlocks.DECORATED_LIGHTS_CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos.below(), ModBlocks.DECORATED_LIGHTS_CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos, ModBlocks.DECORATED_LIGHTS_CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);
@@ -90,7 +90,7 @@ public class LightsChristmasTreeTopBlock extends BushBlock {
 
             if (tree.getItem() == ModItems.ORNAMENTS_WHITE.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos.below(2), ModBlocks.DECORATED_WHITE_LIGHTS_CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos.below(), ModBlocks.DECORATED_WHITE_LIGHTS_CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos, ModBlocks.DECORATED_WHITE_LIGHTS_CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);
@@ -105,7 +105,7 @@ public class LightsChristmasTreeTopBlock extends BushBlock {
 
             if (tree.getItem() == ModItems.STAR.get()){
 
-                System.out.println("YOU MUST BE MY LUCKY STAR!");
+
                 level.setBlock(pos.above(), ModBlocks.STAR_TOPPER.get().defaultBlockState(),3);
 
                 tree.shrink(1);
@@ -113,7 +113,7 @@ public class LightsChristmasTreeTopBlock extends BushBlock {
 
             if (tree.getItem() == ModItems.BOW.get()){
 
-                System.out.println("YOU MUST BE MY LUCKY STAR!");
+
                 level.setBlock(pos.above(), ModBlocks.BOW_TOPPER.get().defaultBlockState(),3);
 
                 tree.shrink(1);
@@ -121,13 +121,13 @@ public class LightsChristmasTreeTopBlock extends BushBlock {
 
             if(player.isShiftKeyDown() && tree.isEmpty() && blockstate.getBlock() == ModBlocks.BOW_TOPPER.get()){
                 player.setItemInHand(handIn.MAIN_HAND, new ItemStack(ModItems.BOW.get()));
-                System.out.println("BOW DOWN.");
+
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(),3);
             }
 
             if(player.isShiftKeyDown() && tree.isEmpty() && blockstate.getBlock() == ModBlocks.STAR_TOPPER.get()){
                 player.setItemInHand(handIn.MAIN_HAND, new ItemStack(ModItems.STAR.get()));
-                System.out.println("STARLIGHT STARBRIGHT");
+
                 level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(),3);
             }
 

@@ -43,7 +43,7 @@ public class TreeStandBlock extends Block {
 
             if (tree.getItem() == ModItems.CHRISTMAS_TREE.get()){
 
-                System.out.println("O CHRISTMAS TREE, O CHRISTMAS TREE!");
+
                 level.setBlock(pos, ModBlocks.CHRISTMAS_TREE_BOTTOM.get().defaultBlockState(),3);
                 level.setBlock(pos.offset(0,1,0), ModBlocks.CHRISTMAS_TREE_MIDDLE.get().defaultBlockState(),3);
                 level.setBlock(pos.offset(0,2,0), ModBlocks.CHRISTMAS_TREE_TOP.get().defaultBlockState(),3);
