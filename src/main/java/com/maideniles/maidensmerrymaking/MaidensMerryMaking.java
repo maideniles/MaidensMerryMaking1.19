@@ -27,6 +27,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 import java.util.Locale;
@@ -46,8 +47,6 @@ public class MaidensMerryMaking {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MerryMakingConfig.CLIENT_CONFIG);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, MerryMakingConfig.SERVER_CONFIG);
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
@@ -69,10 +68,15 @@ public class MaidensMerryMaking {
     //   forgeBus.addListener(ModConditions::registerConditionSerializers);
         eventBus.addListener(this::setup);
 
+        GeckoLib.initialize();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
        ;
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MerryMakingConfig.CLIENT_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, MerryMakingConfig.SERVER_CONFIG);
+
     }
 
     // add a comment

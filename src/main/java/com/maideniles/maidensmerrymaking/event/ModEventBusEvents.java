@@ -4,17 +4,9 @@ import com.maideniles.maidensmerrymaking.MaidensMerryMaking;
 import com.maideniles.maidensmerrymaking.entity.custom.ColoredBunnyEntity;
 import com.maideniles.maidensmerrymaking.entity.custom.ColoredChickenEntity;
 import com.maideniles.maidensmerrymaking.init.ModEntityTypes;
-import com.maideniles.maidensmerrymaking.items.armor.item.BunnyHoodArmorItem;
-import com.maideniles.maidensmerrymaking.items.armor.item.RedChristmasArmorItem;
-import com.maideniles.maidensmerrymaking.items.armor.item.ReindeerEarsArmorItem;
-import com.maideniles.maidensmerrymaking.items.armor.render.BunnyHoodArmorRenderer;
-import com.maideniles.maidensmerrymaking.items.armor.render.RedChristmasArmorRenderer;
-import com.maideniles.maidensmerrymaking.items.armor.render.ReindeerEarsArmorRenderer;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 @Mod.EventBusSubscriber(modid = MaidensMerryMaking.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventBusEvents {
